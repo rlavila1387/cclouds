@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="appName">CClouds</string>
+    <string name="appAbout">About</string>
+    <string name="appContactSynch">Synchronization</string>
+    <string name="appRegister">Register</string>
+    <string name="appPreferences">Preferences</string>
+
+    <string name="userPhoneNumber">Phone</string>
+    <string name="userPassword">Password</string>
+    <string name="userPasswordConfirm">Confirm</string>
+    <string name="userEmail">Email</string>
+    <string name="userName">Username</string>
+
+    <string name="rememberPssword">Remember password</string>
+    <string name="startBackup">START BACKUP</string>
+    <string name="startSession">START SESSION</string>
+    <string name="userRegister">Register on cclouds</string>
+    <string name="doRegister">REGISTER</string>
+    <string name="descPrefRememberPass">Don\'t type you password again, we take care of it</string>
+    <string name="descPreferSDCard">Data will be stored at SD Card if available</string>
+    <string name="preferSDCard">SD Card preferred</string>
+    <string name="advanced">Advanced</string>
+    <string name="serverAddress">Server address</string>
+    <string name="isFirstTime">First time</string>
+    <string name="descPrefUseCache">Use local data until de updated one comes from our servers</string>
+    <string name="useCache">Use local cache</string>
+    <string name="firstName">FirstName</string>
+    <string name="lastName">LastName</string>
+    <string name="phoneNumber">PhoneNumber</string>
+    <string name="contactsSearch">Search Contacts</string>
+    <string name="contactsSynchronize">Synchronize Contacts</string>
+    <string name="doGetAllUsers">Get all users</string>
+    <string name="errPassTooShort">Password too short</string>
+    <string name="errPassDoNotMatch">Password do not Match</string>
+    <string name="errRequiredField">Required field</string>
+    <string name="unexpectedError">An unexpected error has occurred, Please contact with the System Administrator.</string>
+    <string name="noUserDataWasSynchronized">There is not user data to synchronise</string>
+    <string name="contactsSynchronization">Contacts Synchronization</string>
+    <string name="userSynchronization">Users Synchronization</string>
+    <string name="OK">OK</string>
+    <string name="CANCEL">Cancel</string>
+    <string name="OPTIONS">OPTIONS</string>
+    <string name="acceptTermsAndConditions">Accept the terms.</string>
+    <string name="termsAndConditionsAgreements">Agreements</string>
+    <string name="exportContacts">Export Contacts</string>
+    <string name="importContacts">Import Contacts</string>
+    <string name="sendSMS">Send SMS</string>
+    <string name="sendEmail">Send Email</string>
+    <string name="mainOptions">Main Options</string>
+    <string name="notImplemented">Function not implemented.</string>
+
+    <string name="userSynchronizationInformation">User data information will be synchronised from the webservice.</string>
+    <string name="userSynchronizationInformationFirstTime">This is the first time you execute cclouds. Your contact data will be synchronised from your cell phone to webservice.</string>
+
+    <string name="done">DONE</string>
+    <string name="sex">SEX</string>
+
+    <!--SYNCH OPTIONS-->
+    <string name="synchOptionsTitle">Synch options</string>
+
+    <!--SYNCH MESSAGES-->
+    <string name="contactsBackupOnServer">There are contacts only in the server.Choose an option.</string>
+    <string name="contactsBackupOnBoth">There are contacts in both the server and this device. Choose an option.</string>
+    <string name="contactsBackupHasBeenSynced">Contacts have been synced.</string>
+    <string name="contactsBackupHasBeenDone">Contact backup have been done.</string>
+    <string name="contactsAlreadySynch">Contacts are synced.</string>
+    <string name="operationComplete">The task has been completed.</string>
+    <string name="operationWorking">The task you chose is running.</string>
+    <string name="syncInProgress">Syncing now...</string>
+    <string name="contactsChanged">Contacts have changed. Sync will be done when Internet is available.</string>
+    <string name="thereHasBeenAnError">Something went wrong.</string>
+
+
+
+    <!-- LOGIN -->
+    <string name="loginActProcess">Login in progress &#8230;</string>
+
+    <!-- REGISTER -->
+    <string name="registerActProcess">Regiter in progress &#8230;</string>
+
+    <!-- SYNCHRONISING -->
+    <string name="synchActProcess">In progress &#8230;</string>
+
+    <!-- ERRORS -->
+    <string name="errWrongUserAndPass">Wrong User or Password</string>
+    <string name="errInetConnection">Error, please check internet connection.</string>
+    <string name="errCreatingUser">Error, creating new user in the dtabase.</string>
+
+    <string-array name="contactsSynchronizationByValues">
+        <item>Replace device contacts</item>
+        <item>Replace server contacts</item>
+        <item>Merge contacts</item>
+    </string-array>
+
+    <string-array name="contactsSynchronizationByOptions">
+        <item>Replace contacts Device from DB </item>
+        <item>Replace contacts DB from Device</item>
+        <item>Merge contacts</item>
+    </string-array>
+
+
+</resources>

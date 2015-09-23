@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:tools="http://schemas.android.com/tools"
+              tools:context=".views.usuario.ContactSynch"
+        >
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/synch_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            >
+
+        <ProgressBar
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="26"
+                android:layout_marginTop="40dp"
+                />
+        <TextView
+                android:id="@+id/synch_status_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:fontFamily="sans-serif-light"
+                android:layout_weight="74"
+                android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+    <!--<include-->
+    <!--android:id="@+id/include_top_layout"-->
+    <!--layout="@layout/layout_top" />-->
+
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+
+            android:id="@+id/synch_view"
+
+            >
+        <FrameLayout
+                android:id="@+id/lnr1"
+                android:orientation="vertical"
+                android:layout_width="72dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:visibility="visible"
+                android:background="@drawable/cclouds_sync">
+            <ImageView
+                    android:src="@drawable/ic_menu_refresh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/curvedArrows"
+                    android:layout_gravity="center"/>
+        </FrameLayout>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_margin="10dp"
+                    android:text="@string/contactsBackupHasBeenSynced"
+                    android:id="@+id/synch_status_message_front"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:paddingTop="25dp"
+                    />
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                style="?android:attr/buttonStyleSmall"
+                android:text="@string/OPTIONS"
+                android:id="@+id/optionsButton"
+                android:background="@drawable/button_selector"
+                android:visibility="invisible"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp"
+                android:layout_gravity="center"/>
+
+
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="20"
+                android:visibility="gone"
+                >
+            <ImageView
+                    android:src="@drawable/skydrive_blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="25"/>
+            <ImageView
+                    android:src="@drawable/skydrive_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="25"/>
+            <ImageView
+                    android:src="@drawable/clouds"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="25"
+                    />
+            <ImageView
+                    android:src="@drawable/circle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="25"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>

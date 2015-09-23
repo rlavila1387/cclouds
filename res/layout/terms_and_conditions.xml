@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/linear1">
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            android:layout_weight="15"
+            android:paddingTop="10dp"
+            >
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:text="@string/termsAndConditionsAgreements"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/color_texto_principal"
+                android:textAppearance="?android:textAppearanceLarge"
+                />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:layout_weight="65"
+            >
+
+        <ScrollView
+                android:id="@+id/scroll1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp">
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linear2"
+
+                    >
+                <TextView android:textAppearance="?android:textAppearanceMedium"
+                          android:textColor="@android:color/darker_gray"
+                          android:layout_width="fill_parent"
+                          android:layout_height="0dp"
+                          android:layout_marginTop="12.0dip"
+                          android:layout_marginRight="4.0dip"
+                          android:text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+                          android:id="@+id/txt1" android:layout_weight="0.31"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp">
+
+            <CheckBox
+                    android:id="@+id/acceptTerms"
+                    android:text="@string/acceptTermsAndConditions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false">
+            </CheckBox>
+
+            <Button
+                    android:id="@+id/acceptTermsButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="@string/done"
+                    android:background="@drawable/button_selector"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="32dp"
+                    android:paddingRight="32dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    >
+            </Button>
+        </LinearLayout>
+
+</LinearLayout>

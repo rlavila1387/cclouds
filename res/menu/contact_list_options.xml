@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+            android:id="@+id/contactSearch"
+            android:actionViewClass="android.widget.SearchView"
+            android:icon="@android:drawable/ic_menu_search"
+            android:showAsAction="always"
+            android:title="@string/contactsSearch"/>
+   <!-- <item
+            android:id="@+id/contactSynchronize"
+            android:icon="@android:drawable/ic_popup_sync"
+            android:showAsAction="always"
+            android:title="@string/contactsSynchronize"/>-->
+
+    <item
+            android:id="@+id/contactsSynchMainOptions"
+            android:icon="@android:drawable/ic_dialog_email"
+            android:showAsAction="ifRoom|collapseActionView"
+            android:title="@string/mainOptions">
+        <menu >
+            <group
+                    android:id="@+id/contactsSynchUsuarioSettings"
+                    >
+                <item
+                        android:id="@+id/contactsSynchsendSms"
+                        android:title="@string/sendSMS"
+                        />
+                <item
+                        android:id="@+id/contactsSynchsendEmail"
+                        android:title="@string/sendEmail"
+                        />
+            </group>
+        </menu>
+    </item>
+</menu>
